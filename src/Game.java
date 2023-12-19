@@ -11,7 +11,7 @@ public class Game {
     public Game(Scanner scanner, GameConfiguration gameConfiguration) {
         this.scan = scanner;
         this.gameConfiguration = gameConfiguration;
-        this.dictionary = new Dictionary("src/5_letter_words.txt" );
+        this.dictionary = new Dictionary("5_letter_words.txt" );
         System.out.println("Enter your guess: ");
         String guess = scan.nextLine();
         while (!(checkLength(guess)) || !(inDictionary(guess))) {
